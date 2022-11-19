@@ -58,9 +58,9 @@ for letter in letterFrequency:
 availableWords.sort(key=getWordFrequency, reverse=True)
 currentWord = availableWords[0]
 
-time.sleep(5)
+time.sleep(3)
 
-pyautogui.write(currentWord, interval=0.25)
+pyautogui.write(currentWord, interval=0.1)
 pyautogui.press("enter")
 
 availableWords.remove(currentWord)
@@ -95,7 +95,7 @@ while attempts < 7:
     pyautogui.alert("You won!")
     sys.exit()
   
-  pyautogui.write(currentWord, interval=0.25)
+  pyautogui.write(currentWord, interval=0.1)
   pyautogui.press("enter")
   
   availableWords.remove(currentWord)
